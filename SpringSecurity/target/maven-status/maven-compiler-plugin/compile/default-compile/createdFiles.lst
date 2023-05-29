@@ -1,0 +1,5 @@
+com\springsecure\MvcWebApplicationInitializer.class
+com\springsecure\AppConfig.class
+com\springsecure\WebSecurityConfig.class
+com\springsecure\SecurityWebApplicationInitializer.class
+com\springsecure\controller\HomeController.class
