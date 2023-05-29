@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+ http://www.springframework.org/schema/aop
+ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+    <aop:aspectj-autoproxy />
+    <bean id="calculatorBean" class="springDay4.Calculator" />
+    <!-- Aspect -->
+    <bean id="befAdv" class="springDay4.BeforeAdviceSub" />
+    <bean id="AfAdv" class="springDay4.AfterAdviceAdd" />
+    <bean id="AfRunAdv" class="springDay4.AfterRetruningAdviceMul" />
+    <bean id="AftThrAdv" class="springDay4.AfterThrowingAdviceDiv"/>
+</beans>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+
+    <bean id = "phone1" class="springDay2.Customer" >
+
+        <property name="customerId" value="101"/>
+        <property name="customerName" value="Harsh ranjan"/>
+        <property name="monthlyIncome" value="3200000.01"/>
+        <property name="profession" value="Software Engineer"/>
+        <property name="designation" value="ASE"/>
+        <property name="companyName" value="Nucleus Software"/>
+
+        <property name="phoneNumbers">
+            <list>
+                <value>+917274088610 </value>
+                <value>9334301234</value>
+                <value>7892345081</value>
+                <value>+918032456797</value>
+            </list>
+        </property>
+        <property name="emailAddress">
+            <set>
+                <value> harsh34@gmail.com</value>
+                <value> sunny23@gmail.com</value>
+                <value> raush12@gmail.com</value>
+            </set>
+        </property>
+        <property name="dateOfBirth" value="25-07-2001"/>
+        <property name="address" ref="address1"/>
+    </bean>
+    <bean id="address1" class="springDay2.Address">
+        <property name="addressId" value="1"/>
+        <property name="AddressLine1" value="Pindaruch"/>
+        <property name="AddressLine2" value="Muhammadpur"/>
+        <property name="city" value="Darbhnaga"/>
+        <property name="Zip" value="847306"/>
+    </bean>
+</beans>

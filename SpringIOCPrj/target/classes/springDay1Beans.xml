@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--    <bean id="customer1" class="springDay1.Customer">-->
+<!--       <property name="customerId" value="101"/>-->
+<!--        <property name="customerName" value="Harsh ranjan"/>-->
+<!--        <property name="monthlyIncome" value="3200000.00"/>-->
+<!--        <property name="profession" value="Software Engineer"/>-->
+<!--        <property name="designation" value="ASE"/>-->
+<!--        <property name="companyName" value="Nucleus Software"/>-->
+
+    <bean id="customer1" class="springDay1.Customer">
+        <property name="customerId" value="101"/>
+        <property name="customerName" value="Harsh ranjan"/>
+        <property name="monthlyIncome" value="3200000.00"/>
+        <property name="profession" value="Software Engineer"/>
+        <property name="designation" value="ASE"/>
+        <property name="companyName" value="Nucleus Software"/>
+
+        <constructor-arg type="int" value="101"/>
+        <constructor-arg index="1" value="Harsh Ranjan"/>
+        <constructor-arg index="2" value="3200000.01"/>
+        <constructor-arg type="String" value="Software Engineer"/>
+        <constructor-arg name="designation" value="ASE"/>
+        <constructor-arg name="companyName" value="Nucleus Software"/>
+
+
+<!--        <property name="phoneNumbers">-->
+<!--            <list>-->
+<!--                <value> 7274088610</value>-->
+<!--                <value> 7274088611</value>-->
+<!--                <value> 7274088612</value>-->
+<!--                <value> 7274088613</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="emailAddressSet">-->
+<!--            <set>-->
+<!--                <value> harsh3550@gmail.com</value>-->
+<!--                <value> ha550@gmail.com</value>-->
+<!--                <value> hars550@gmail.com</value>-->
+<!--                <value> har50@gmail.com</value>-->
+<!--            </set>-->
+<!--        </property>-->
+    </bean>
+</beans>
