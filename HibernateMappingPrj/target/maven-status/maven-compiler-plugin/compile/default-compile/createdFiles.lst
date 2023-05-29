@@ -1,0 +1,4 @@
+com\hibernate\Main.class
+com\hibernate\HibernateUtil.class
+com\hibernate\Student.class
+com\hibernate\StudentAddress.class

@@ -1,0 +1,3 @@
+com\hibernate\HibernateUtil.class
+com\hibernate\Student.class
+com\hibernate\CreateStudent.class
