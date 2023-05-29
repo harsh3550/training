@@ -1,0 +1,6 @@
+Name : raushan
+DOB : 01/04/2000
+Email : raushan321@gmail.com
+Qualification : MCA
+Designation : SE
+YOE : 2.0
